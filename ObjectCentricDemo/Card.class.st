@@ -13,12 +13,6 @@ Card class >> newNamed: aString [
 	
 ]
 
-{ #category : #printing }
-Card >> logCardToTranscript [
-	Transcript show: self name.
-	Transcript nextPut: Character linefeed
-]
-
 { #category : #accessing }
 Card >> name [
 	^ name
@@ -32,6 +26,12 @@ Card >> name: anObject [
 { #category : #printing }
 Card >> print [
 	^ 'hello'
+]
+
+{ #category : #printing }
+Card >> printCardToTranscript [
+	Transcript show: self name.
+	Transcript nextPut: Character linefeed
 ]
 
 { #category : #printing }
