@@ -29,6 +29,12 @@ Card >> print [
 ]
 
 { #category : #printing }
+Card >> printCardToTranscript [
+	Transcript show: self name.
+	Transcript nextPut: Character linefeed
+]
+
+{ #category : #printing }
 Card >> printOn: aStream [
 	aStream
 		nextPutAll: self name.
