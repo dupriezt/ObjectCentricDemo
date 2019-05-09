@@ -116,7 +116,7 @@ Deck >> indexOfCurrentCard: anObject [
 
 { #category : #printing }
 Deck >> printNextCardToTranscript [
-	(self cards at: (self indexOfCurrentCard)) printCardToTranscript.
+	(self cards at: (self indexOfCurrentCard)) logCardToTranscript.
 	(self indexOfCurrentCard = self cards size)
 		ifTrue: [ self indexOfCurrentCard: 1 ]
 		ifFalse: [ self indexOfCurrentCard: (self indexOfCurrentCard +1) ]
